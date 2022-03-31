@@ -9,7 +9,7 @@
     }
 </script>
 
-<div class="grid place-items-center h-screen">
+<div class="grid place-items-center h-screen bg-slate-300">
   <div class="w-full max-w-xs">
     <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
       <div class="mb-6">
@@ -33,12 +33,12 @@
           type="button"
           on:click={handleSubmit}
         >
-          Sign In
+          Enter
         </button>
       </div>
     </form>
     <p class="text-center text-gray-500 text-xs">
-      &copy;2020 Acme Corp. All rights reserved.
+      &copy;2022 Knowit Gävleborg. All rights reserved.
     </p>
   </div>
 </div>
