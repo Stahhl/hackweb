@@ -3,4 +3,4 @@
   console.log($page.params.slug);
 </script>
 
-<h1>landing</h1>
+<h1>{$page.params.slug}</h1>
