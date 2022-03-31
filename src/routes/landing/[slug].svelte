@@ -6,8 +6,8 @@
     return {
       status: response.status,
       props: {
-        apiData: response.ok && (await response.json())
-      }
+        apiData: response.ok && (await response.json()),
+      },
     };
   }
 </script>
@@ -17,6 +17,13 @@
 </script>
 
 <h1>{apiData.msg}</h1>
-<p><a href={apiData.email}>Maila oss</a></p>
+{#if apiData.email != ""}
+  <p><a href={apiData.email}>Maila oss</a></p>
+{/if}
 <br />
-<a href="/" type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">back</a>
+<a
+  href="/"
+  type="button"
+  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+  >back</a
+>

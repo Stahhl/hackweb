@@ -2,16 +2,16 @@
 export function get({ params }) {
   const input = params.slug.toUpperCase();
 
-  if (input === "UKRAINA" ||  input === "KNOWIT") {
+  if (input === "UKRAINA" || input === "KNOWIT") {
     return {
-      body: { 
+      body: {
         msg: "You're hired! Lookout för hatt!",
-        email: "mailto:gavle@knowit.se" 
+        email: "mailto:gavle@knowit.se",
       },
     };
   }
 
   return {
-    body: { value: "You're fired!" },
+    body: { msg: "You're fired!", email: "" },
   };
 }
