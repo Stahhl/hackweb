@@ -16,6 +16,7 @@
   export let apiData;
 </script>
 
-<h1>{apiData.value}</h1>
+<h1>{apiData.msg}</h1>
+<p><a href={apiData.email}>Maila oss</a></p>
 <br />
 <a href="/" type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">back</a>
